@@ -100,7 +100,7 @@ class BookInStock
     @price = price.to_f
   end
   def price_as_string
-    formatted_price = "$"+('%.2f' % price).to_s
+    formatted_price = "$%.2f" % price
     return formatted_price
   end
 end
